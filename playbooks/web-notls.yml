@@ -11,7 +11,7 @@
     - name: enable configuration
       file: >
         dest=/etc/nginx/sites-enabled/default
-        src=/etc/nginx/sites-availiable/default
+        src=/etc/nginx/sites-available/default
         state=link
 
     - name: Copy index.html
