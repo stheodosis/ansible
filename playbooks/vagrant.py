@@ -14,7 +14,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Vagrant inventory script")
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument('--list',action='store_true')
-    group.add_argument('--host')
+    group.add_argument('--host',action='store')
     return parser.parse_args()
 
 def list_running_hosts():
