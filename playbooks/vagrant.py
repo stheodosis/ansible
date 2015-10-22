@@ -8,6 +8,7 @@ import json
 import paramiko
 import subprocess
 import sys
+import pprint
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Vagrant inventory script")
@@ -44,6 +45,7 @@ def main():
         json.dump({'vagrant': hosts},sys.stdout)
     else:
         details = get_host_details(args.host)
+        pprint.pprint(details)
 
 if __name__ == '__main__':
     main()
