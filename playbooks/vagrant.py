@@ -45,7 +45,7 @@ def main():
         json.dump({'vagrant': hosts},sys.stdout)
     else:
         details = get_host_details(args.host)
-        pprint.pprint(details)
+        #pprint.pprint(details)
 
 if __name__ == '__main__':
     main()
